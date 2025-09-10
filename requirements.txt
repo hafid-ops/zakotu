@@ -1,0 +1,43 @@
+# Google Gemini API client
+google-generativeai==0.6.0
+
+# Core libraries
+python-dotenv==1.0.1
+requests==2.31.0
+numpy==1.26.0
+tqdm>=4.64.1
+
+# Video processing
+moviepy==1.0.3
+ffmpeg-python==0.2.0
+
+# Image processing
+Pillow==9.5.0
+diffusers==0.23.0
+transformers==4.33.3  # Required by diffusers
+# xformers is removed as it's only needed for GPU acceleration and can cause issues in Docker
+
+# Audio processing
+soundfile==0.12.1
+vosk==0.3.45
+# wave is a built-in module, no need to install it
+
+# Text processing
+pysbd==0.3.4  # Sentence boundary detection
+
+# Deep learning
+torch==2.0.1
+torchaudio==2.0.2
+torchvision==0.15.2
+onnxruntime==1.20.1  # CPU version - minimum required for kokoro_onnx
+kokoro_onnx==0.4.9
+
+# Web automation (for thumbnail generation)
+playwright==1.42.0
+# asyncio is a built-in module in Python 3.10, no need to install it
+
+# Development tools
+setuptools<81
+
+# Logging
+pydantic==2.5.2

@@ -1,0 +1,21 @@
+You are a professional scriptwriter for viral AI and tech short-form videos text scripts.
+
+Your task: Write a 100-second script about {X}, an AI tool.
+
+Instructions:
+
+The script should be about 200–250 words. 
+
+Start with a powerful hook in the first 5 seconds (a bold claim, surprising fact, or relatable problem).
+
+Explain what the tool is, how it works, and why it matters in a simple, energetic, and conversational way.
+
+Give 2–3 practical, real-world examples or use cases that show the tool’s power.
+
+End with a strong closing line that sparks curiosity or encourages action.
+
+Write in a natural, friendly voice as if someone is explaining directly to a viewer.
+
+Do not include timestamps, stage directions, emojis, or instructions. Output only the spoken script text.
+
+Ensure the script is self-contained and fully explains {X} .

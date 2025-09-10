@@ -1,0 +1,140 @@
+# ZAKOTU: AI Video Story Generator
+
+This project automatically generates creative stories using Google Gemini AI, converts them to speech with the Kokoro voice model, and creates engaging videos with dynamic captions and visual elements.
+
+## Features
+
+- **AI Story Generation**: Creates original stories using Google Gemini AI
+- **Voice Synthesis**: Converts text to natural-sounding speech using Kokoro
+- **Video Creation**: Combines voice, visuals, and dynamic captions
+- **Thumbnail Generation**: Creates social media style thumbnails
+- **Docker Support**: Easy deployment in containerized environments
+
+## Quick Start with Docker (Recommended)
+
+### Prerequisites
+- [Docker](https://www.docker.com/products/docker-desktop/)
+
+### Setup Steps
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/zakotu.git
+   cd zakotu
+   ```
+
+2. **Create a `.env` file with your API key:**
+   ```
+   GEMINI_API_KEY=your_gemini_api_key_here
+   ```
+
+3. **Create or edit the story prompt:**
+   - Edit `config/prompt.txt` with your story idea
+
+4. **Build and run the container:**
+   ```bash
+   # Using Docker Compose (recommended)
+   docker compose up --build
+   
+   # Or manually with Docker
+   docker build -t zakotu-app .
+   docker run --rm \
+     -v "$(pwd)/output:/app/output" \
+     -v "$(pwd)/data:/app/data" \
+     --env-file .env \
+     zakotu-app
+   ```
+
+5. **Access the output:**
+   - Generated content will be in the `output` folder
+   - Logs will be in the `logs` folder
+
+## Local Installation
+
+### Prerequisites
+
+- Python 3.10+
+- FFmpeg
+- ImageMagick
+- CUDA-compatible GPU (optional, for faster generation)
+
+### Setup Steps
+
+1. **Create a virtual environment:**
+   ```bash
+   python -m venv venv
+   ```
+
+2. **Activate the environment:**
+   - Windows: `.\venv\Scripts\activate`
+   - macOS/Linux: `source venv/bin/activate`
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Install Playwright browsers:**
+   ```bash
+   playwright install --with-deps chromium
+   ```
+
+5. **Set up your Gemini API key:**
+   - Create a `.env` file in the project root with: `GEMINI_API_KEY=your_key_here`
+
+6. **Create your story prompt:**
+   - Edit `config/prompt.txt` with your story idea
+
+7. **Run the application:**
+   ```bash
+   python x.py  # Downloads required models
+   python src/main.py  # Runs the main application
+   ```
+
+## Project Structure
+
+- `src/`: Main application code
+  - `main.py`: Main entry point
+  - `story_generator.py`: Handles Gemini API interactions
+  - `voice_generator.py`: Text-to-speech with Kokoro
+  - `video_generator.py`: Creates videos with captions
+  - `thumbnail_generator.py`: Creates social media style thumbnails
+- `config/`: Configuration files and prompts
+- `data/`: Model files and temporary data
+- `output/`: Generated content (stories, voices, videos)
+- `logs/`: Application logs
+
+## Docker Configuration
+
+The project includes:
+- `Dockerfile`: Configures the application environment
+- `docker-compose.yml`: Sets up volumes and container configuration
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Docker Build Fails:**
+   - Check if Docker has enough resources allocated
+   - Ensure your `.env` file is created correctly
+   - Try rebuilding with `docker compose build --no-cache`
+
+2. **ImageMagick Errors:**
+   - Docker setup automatically configures ImageMagick
+   - For local setup, ensure ImageMagick is installed and properly configured
+
+3. **Missing Models:**
+   - The `x.py` script automatically downloads the Vosk model
+   - If download fails, manually get it from [Vosk Models](https://alphacephei.com/vosk/models)
+
+4. **GPU Acceleration:**
+   - Docker runs in CPU-only mode for compatibility
+   - For local GPU acceleration, install appropriate CUDA drivers and PyTorch
+
+5. **API Rate Limits:**
+   - Google Gemini API has rate limits
+   - If you hit limits, wait and try again later
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

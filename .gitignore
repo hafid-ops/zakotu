@@ -1,0 +1,90 @@
+# Environment and API Keys
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Generated content (users should decide what to keep)
+output/generatedStory/generated_story.txt
+output/generatedStory/fallback_story.txt
+output/generatedStory/intro_and_thumb_text.txt
+output/generatedVideo/*.mp4
+output/generatedVideo/*.wav
+output/generatedVoice/*.wav
+output/generatedVoice/*.txt
+output/generatedImage/short/*
+output/generatedThumbnail/*.png
+
+# Temporary files
+data/temp/
+data/audio/temp-*
+generatedVideo/
+generatedVoice/
+
+# AI Models (large files)
+data/models/kokoro-v1.0.onnx
+data/models/voices-v1.0.bin
+data/models/vosk-model-small-en-us-0.15/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Docker
+.docker/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Stock assets (optional - uncomment if you don't want to include these)
+# assets/stock/music/*
+# assets/stock/videos/*
+# assets/stock/shorts/*
+
+# Test voices output
+output/test_voices/

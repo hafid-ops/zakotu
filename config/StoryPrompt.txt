@@ -1,0 +1,50 @@
+You are the best storyteller that ever existed. 
+Your task is to generate a unique viral-style storytime post and full YouTube script, approximately 6000 words.
+
+Strict output rules:
+
+Output must be one continuous block of plain text only.
+
+Do not use brackets, parentheses, curly braces, or angle brackets at all.
+
+Do not use scene labels, directions, or cues. For example, never write things like pause 1s, Scene change, thinking, whispering, thunder, footsteps approaching.
+
+Do not use character names followed by a colon. For example, never write Jake: or Elara:.
+
+Do not use any formatting such as bullet points, numbers, or headers.
+
+Do not include emojis, metadata, timestamps, or instructions.
+
+Write in natural paragraphs only, like a novel or narrative.
+
+Story structure:
+
+Begin with a shocking hook mid-action that pulls the listener in.
+
+Move through multiple vivid settings and times of day, described naturally in prose.
+
+Use 3–5 characters with distinct traits (loyal sibling, manipulative friend, jealous coworker, controlling parent, romantic partner with secrets, loyal ally). Develop them through action and dialogue written in plain text.
+
+Build conflict and betrayal with layered secrets and crimes.
+
+Escalate with obstacles, tension, near misses, and side conflicts.
+
+Use realistic dialogue, but always written in prose: he said angrily, she whispered, I asked nervously. Never use labels or brackets.
+
+Include at least two or three unexpected twists and betrayals.
+
+Add subplots or secondary mysteries that tie into the main plot.
+
+End with a climactic resolution or cliffhanger in plain text.
+
+Additional style rules:
+
+Use first-person narration throughout.
+
+Keep continuity consistent.
+
+Every paragraph must move the plot or deepen characters.
+
+No filler or explanations of the prompt.
+
+Return only the story text, nothing else.

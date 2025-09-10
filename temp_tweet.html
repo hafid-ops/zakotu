@@ -1,0 +1,108 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tweet-like Image</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: "Segoe UI", Arial, sans-serif;
+                background-color: #000000; /* Black background for X */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            .tweet-card {
+                background-color: #000000; /* Black background for card */
+                border: 1px solid #38444d; /* Subtle border */
+                border-radius: 16px;
+                padding: 16px;
+                max-width: 580px; /* Standard tweet width */
+                color: #e7e9ea; /* Light text color */
+                font-size: 15px;
+                line-height: 20px;
+                word-wrap: break-word;
+            }
+            .tweet-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+            }
+            .avatar {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #38444d; /* Placeholder for avatar */
+                margin-right: 10px;
+            }
+            .user-info {
+                display: flex;
+                flex-direction: column;
+            }
+            .user-name {
+                font-weight: bold;
+                color: #e7e9ea;
+            }
+            .user-handle {
+                color: #71767b;
+            }
+            .tweet-content {
+                white-space: pre-wrap; /* Preserves whitespace and line breaks */
+                margin-bottom: 12px;
+            }
+            .tweet-footer {
+                display: flex;
+                justify-content: space-around;
+                color: #71767b;
+                font-size: 13px;
+            }
+            .tweet-footer div {
+                display: flex;
+                align-items: center;
+            }
+            .tweet-footer div svg {
+                margin-right: 5px;
+            }
+            /* Basic SVG icons for demonstration */
+            .icon {
+                width: 18px;
+                height: 18px;
+                fill: #71767b;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tweet-card">
+            <div class="tweet-header">
+                <div class="avatar"></div>
+                <div class="user-info">
+                    <span class="user-name">Starlink ✅</span>
+                    <span class="user-handle">@Starlink · 6m</span>
+                </div>
+            </div>
+            <div class="tweet-content">Betrayed by a seemingly loyal best friend, a woman uncovers a complex web of deceit and theft, forcing her to...</div>
+            <div class="tweet-footer">
+                <div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><g><path d="M1.75 1.75L16.25 1.75L22.25 8.75L16.25 15.75L1.75 15.75L1.75 1.75ZM18.25 8.75L16.25 6.75L16.25 10.75L18.25 8.75Z"></path></g></svg>
+                    9
+                </div>
+                <div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><g><path d="M3.75 3.75L20.25 3.75L20.25 20.25L3.75 20.25L3.75 3.75ZM12 16.25L12 7.75L12 16.25ZM16.25 12L7.75 12L16.25 12Z"></path></g></svg>
+                    8
+                </div>
+                <div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><g><path d="M12 21.638c-.838-.002-1.662-.27-2.357-.795-2.106-1.57-4.22-3.14-6.32-4.72-.96-1.08-1.44-2.34-1.44-3.63 0-3.33 2.72-6.05 6.05-6.05 1.65 0 3.22.66 4.34 1.78l.66.66.66-.66c1.12-1.12 2.69-1.78 4.34-1.78 3.33 0 6.05 2.72 6.05 6.05 0 1.29-.48 2.55-1.44 3.63-2.1 1.58-4.21 3.15-6.32 4.72-.695.525-1.519.793-2.357.795z"></path></g></svg>
+                    76
+                </div>
+                <div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><g><path d="M12 1.75C6.34 1.75 1.75 6.34 1.75 12C1.75 17.66 6.34 22.25 12 22.25C17.66 22.25 22.25 17.66 22.25 12C22.25 6.34 17.66 1.75 12 1.75ZM12 20.75C7.19 20.75 3.25 16.81 3.25 12C3.25 7.19 7.19 3.25 12 3.25C16.81 3.25 20.75 7.19 20.75 12C20.75 16.81 16.81 20.75 12 20.75ZM12.75 11.25V7.75H11.25V11.25H7.75V12.75H11.25V16.25H12.75V12.75H16.25V11.25H12.75Z"></path></g></svg>
+                    5.9K
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

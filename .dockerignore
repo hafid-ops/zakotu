@@ -1,0 +1,13 @@
+.venv
+venv
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+.data/
+.cache/
+data/models/
+generatedVoice/
+generatedVideo/
+.env
